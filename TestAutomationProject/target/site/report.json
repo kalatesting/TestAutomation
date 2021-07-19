@@ -1,0 +1,64 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-14T17:49:53.736Z",
+        "line": 4,
+        "name": "Validate the Login to the Website",
+        "description": "",
+        "id": "login-to-the-website;validate-the-login-to-the-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The URL of the Website",
+            "match": {
+              "location": "stepdefinitions.Login.the_url_of_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Sign in with the email",
+            "match": {
+              "location": "stepdefinitions.Login.i_sign_up_with_the_email()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html\r\n\tat org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:280)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:152)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:37)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:222)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:119)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:41)\r\n\tat stepdefinitions.Login.the_user_should_be_created_successfully(Login.java:49)\r\n\tat ✽.The User should be loggedIn successfully(file:///C:/Users/sathi/IdeaProjects/TestAutomationProject/src/test/resources/Features/Login.feature:7)\r\n",
+              "duration": 132000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "The User should be loggedIn successfully",
+            "match": {
+              "location": "stepdefinitions.Login.the_user_should_be_created_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Login to the WebSite",
+    "description": "",
+    "id": "login-to-the-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Login.feature",
+    "tags": []
+  }
+]
